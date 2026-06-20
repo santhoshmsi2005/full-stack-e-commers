@@ -35,7 +35,7 @@ const Product = () => {
                 {product.map((product) => {
                     return (
                         <motion.div key={product.product_id} className='border rounded-lg shadow-md p-4 hover:scale-110 ease-in-out duration-150'>
-                            <img src={product.image} alt={product.title} className='w-full h-48 object-cover rounded' />
+                            <img loading='lazy' src={product.image} alt={product.title} className='w-full h-48 object-cover rounded' />
 
                             <h2 className='font-bold text-lg mt-3'>{product.title}</h2>
 

@@ -1,7 +1,7 @@
 export const getProduct = async () => {
     try {
         
-        const res = await fetch("http://localhost:8000/products")
+        const res = await fetch("https://full-stack-e-commers.onrender.com/products")
         if (!res.ok) {
             throw new Error("Failed to fetch products")
         }
